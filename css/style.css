@@ -28,4 +28,32 @@ button {
 .container {
   max-width: 1220px;
   margin: 0 auto;
+}
+
+.header {
+  margin-top: 53px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-nav__list {
+  min-width: 478px;
+  display: flex;
+  justify-content: space-between;
+}
+.main-nav__item--active {
+  border-bottom: 2px solid #fff;
+}
+.main-nav__link {
+  color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
+  transition: 0.3s all;
+}
+.main-nav__link:hover {
+  color: rgba(225, 225, 225, 0.6);
+}
+.main-nav__link:active {
+  color: rgba(225, 225, 225, 0.3);
 }/*# sourceMappingURL=style.css.map */
