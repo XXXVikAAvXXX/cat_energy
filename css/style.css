@@ -37,10 +37,6 @@ a {
   font-size: 60px;
 }
 
-img {
-  width: 100%;
-}
-
 .header {
   margin-top: 53px;
   display: flex;
@@ -195,4 +191,35 @@ img {
 }
 .btn-arrow:active {
   opacity: 0.3;
+}
+
+.how-work {
+  margin-top: 71px;
+}
+.how-work__title {
+  margin-bottom: 32px;
+}
+.how-work__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.how-work__item {
+  position: relative;
+  width: 250px;
+  height: 280px;
+}
+.how-work__text {
+  margin-top: 151px;
+}
+.how-work__icon {
+  position: absolute;
+  top: 40px;
+}
+.how-work__number {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  z-index: -1;
 }/*# sourceMappingURL=style.css.map */
