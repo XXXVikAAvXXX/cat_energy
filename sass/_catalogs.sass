@@ -1,0 +1,52 @@
+.catalogs
+    margin-top: 262px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &__block
+        position: relative
+        width: 570px
+        height: 374px
+        background: #F2F2F2
+        padding: 41px 51px 55px 52px
+    &__icon
+        position: absolute
+        top: 41px
+        left: 52px
+    &__title
+        margin-top: 36px
+        margin-bottom: 73px
+        text-align: center
+        font-size: 36px
+    &__text
+        font-family: Arial, Helvetica, sans-serif
+        line-height: 24px
+        margin-bottom: 23px
+        
+.slim__icon
+    width: 100px
+    height: 106px
+.pro__icon
+    left: 19px
+    width: 134px
+    height: 100px
+.btn-arrow__icon--short
+    width: 24px
+.btn-arrow__icon--long
+    display: none
+    width: 32px
+
+.btn-arrow
+    display: flex
+    align-items: center
+    font-size: 20px
+    text-transform: uppercase
+    &__icon
+        margin-left: 28px
+    &:hover
+        .btn-arrow__icon--long
+            display: block
+        .btn-arrow__icon--short
+            display: none
+    &:active
+        opacity: 0.3

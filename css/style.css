@@ -21,6 +21,7 @@ a {
 }
 
 .button {
+  display: inline-block;
   cursor: pointer;
   color: #fff;
   background-color: #68B738;
@@ -125,4 +126,73 @@ img {
   z-index: -1;
   transform: translate(100%, 0px);
   background-color: rgba(104, 183, 56, 0.85);
+}
+
+.catalogs {
+  margin-top: 262px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.catalogs__block {
+  position: relative;
+  width: 570px;
+  height: 374px;
+  background: #F2F2F2;
+  padding: 41px 51px 55px 52px;
+}
+.catalogs__icon {
+  position: absolute;
+  top: 41px;
+  left: 52px;
+}
+.catalogs__title {
+  margin-top: 36px;
+  margin-bottom: 73px;
+  text-align: center;
+  font-size: 36px;
+}
+.catalogs__text {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 24px;
+  margin-bottom: 23px;
+}
+
+.slim__icon {
+  width: 100px;
+  height: 106px;
+}
+
+.pro__icon {
+  left: 19px;
+  width: 134px;
+  height: 100px;
+}
+
+.btn-arrow__icon--short {
+  width: 24px;
+}
+
+.btn-arrow__icon--long {
+  display: none;
+  width: 32px;
+}
+
+.btn-arrow {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.btn-arrow__icon {
+  margin-left: 28px;
+}
+.btn-arrow:hover .btn-arrow__icon--long {
+  display: block;
+}
+.btn-arrow:hover .btn-arrow__icon--short {
+  display: none;
+}
+.btn-arrow:active {
+  opacity: 0.3;
 }/*# sourceMappingURL=style.css.map */
