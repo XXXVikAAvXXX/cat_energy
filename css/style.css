@@ -342,4 +342,35 @@ a {
   background: #68B738;
   border-radius: 50%;
   filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.16));
+}
+
+.maps {
+  position: relative;
+}
+.maps__item {
+  width: 100%;
+  min-height: 400px;
+}
+.maps__popup {
+  padding: 0 89px 0 76px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 10px;
+  left: 10px;
+  position: absolute;
+  width: 570px;
+  min-height: 201px;
+  background-color: #fff;
+}
+.maps__popup--title {
+  font-size: 20px;
+  text-transform: uppercase;
+  width: 163px;
+}
+.maps__address {
+  width: 155px;
+}
+.maps__address--street {
+  margin-bottom: 19px;
 }/*# sourceMappingURL=style.css.map */
