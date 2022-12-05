@@ -72,6 +72,19 @@ a {
   color: rgba(225, 225, 225, 0.3);
 }
 
+.form-nav__item--active {
+  border-bottom: 2px solid #68B738;
+}
+.form-nav__link {
+  color: #111111;
+}
+.form-nav__link:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+.form-nav__link:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .promo {
   position: relative;
   margin-left: 80px;
