@@ -1,0 +1,46 @@
+.footer
+    margin: 57px 0
+    &__wrapper
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__logo
+        &:hover
+            .footer__logo--icon
+                opacity: 0.8
+        &:active
+            .footer__logo--icon
+                opacity: 0.6
+
+.social
+    display: flex
+    align-items: center
+    &__item:not(:last-child)
+        margin-right: 28px
+    &__item
+        &--icon
+            transition: 0.3s all
+            fill: #666
+            &:hover
+                fill: #68B738
+            &:active
+                fill-opacity: 0.3
+    &__item--facebook
+        stroke: #666
+        &:hover
+            stroke: #68B738
+        &:active
+            stroke-opacity: 0.3
+.copyright
+    &__link
+        display: flex
+        align-items: center
+        &:hover
+            .copyright__logo
+                fill: #68B738
+        &:active
+            opacity: 0.3
+    &__logo
+        margin-left: 22px
+        fill: #666
+        transition: 0.3s all

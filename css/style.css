@@ -373,4 +373,62 @@ a {
 }
 .maps__address--street {
   margin-bottom: 19px;
+}
+
+.footer {
+  margin: 57px 0;
+}
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__logo:hover .footer__logo--icon {
+  opacity: 0.8;
+}
+.footer__logo:active .footer__logo--icon {
+  opacity: 0.6;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+}
+.social__item:not(:last-child) {
+  margin-right: 28px;
+}
+.social__item--icon {
+  transition: 0.3s all;
+  fill: #666;
+}
+.social__item--icon:hover {
+  fill: #68B738;
+}
+.social__item--icon:active {
+  fill-opacity: 0.3;
+}
+.social__item--facebook {
+  stroke: #666;
+}
+.social__item--facebook:hover {
+  stroke: #68B738;
+}
+.social__item--facebook:active {
+  stroke-opacity: 0.3;
+}
+
+.copyright__link {
+  display: flex;
+  align-items: center;
+}
+.copyright__link:hover .copyright__logo {
+  fill: #68B738;
+}
+.copyright__link:active {
+  opacity: 0.3;
+}
+.copyright__logo {
+  margin-left: 22px;
+  fill: #666;
+  transition: 0.3s all;
 }/*# sourceMappingURL=style.css.map */
