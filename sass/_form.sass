@@ -1,0 +1,197 @@
+.form-block
+    &__title
+        margin-top: 70px
+        margin-bottom: 56px
+        line-height: 1
+    &__descr
+        width: 323px
+        margin-bottom: 66px
+        font-size: 20px
+.form
+    margin-bottom: 82px
+    &__wrapper
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 70px
+    &__label
+        white-space: nowrap
+        margin-right: 13px
+        font-size: 20px
+        text-transform: uppercase
+        color: #444444
+    &__input
+        transition: 0.3s all
+        display: inline-block
+        width: 100%
+        text-transform: uppercase
+        border: 1px solid #E7E7E7
+        padding: 10px 40px 11px 20px
+        &:hover
+            border: 1px solid #CDCDCD
+        &:required
+            border: 2px solid #FF8282
+    &__title
+        margin-bottom: 76px
+        position: relative
+        font-size: 36px
+        &::before,
+        &::after
+            content: ""
+            display: inline-block
+            vertical-align: middle
+            width: 100%
+            height: 2px
+            background: #68B738
+            position: relative
+        &::before
+            left: -40px
+            margin-left: -100%
+        &::after
+            width: 150%
+            margin-right: -100%
+            right: -40px
+    &__btn
+        display: flex
+        align-items: center
+.info
+    width: 570px
+    p
+        display: flex
+        align-items: center
+        &:not(:last-child)
+            margin-bottom: 20px
+.contacts
+    margin-bottom: 70px
+    &__wrapper
+        display: flex
+        justify-content: space-between
+    &__email,
+    &__phone
+        display: flex
+        align-items: center
+        width: 570px
+        input
+            transition: 0.3s all
+            &:hover
+                border: 1px solid #CDCDCD
+            &:required
+                border: 2px solid #FF8282
+    &__email
+        position: relative
+        &::after
+            content: url(../icons/email.svg)
+            position: absolute
+            right: 20px
+            top: 11px
+            
+
+    &__phone
+        position: relative
+        &::after
+            content: url(../icons/phone.svg)
+            position: absolute
+            right: 17px
+            top: 14px
+.goal
+    padding: 25px 28px 25px 50px
+    border: 1px solid #E7E7E7
+    width: 568px
+    p:not(:last-child)
+        margin-bottom: 30px
+    &__label
+        font-size: 20px
+        position: relative
+        text-transform: uppercase
+        margin-left: 20px
+        &::before
+            content: ""
+            background-color: #fff
+            transition: 0.3s
+            position: absolute
+            width: 40px
+            height: 40px
+            top: -4px
+            left: -60px
+            border: 1px solid #CDCDCD
+            border-radius: 50%
+            cursor: pointer
+        &:hover::before
+            border: 1px solid #BABABA
+        &:disabled
+            opacity: 0.3
+        &::after
+            content: ""
+            background-color: #68B738
+            position: absolute
+            width: 18px
+            height: 18px
+            top: 8px
+            left: -48px
+            border-radius: 50%
+            display: none
+            cursor: pointer
+    &__input:checked ~ .goal__label::after 
+        display: block
+    &__input
+        opacity: 0
+    &__input:disabled ~ .goal__label
+        opacity: 0.3
+.comment
+    margin-bottom: 67px
+    &__input
+        text-transform: uppercase
+        width: 100%
+        min-height: 174px
+        padding: 10px 18px
+        border: 1px solid #E7E7E7
+.addition
+    margin-bottom: 61px
+    p
+        width: 221px
+    &__wrapper
+        display: flex
+        align-items: center
+        justify-content: space-between
+        padding: 0 25px
+    &__input
+        opacity: 0
+    &__input:disabled ~ .addition__label
+        opacity: 0.3
+    &__label
+        position: relative
+        font-size: 20px
+        color: #000
+        text-transform: uppercase
+        margin-left: 19px
+        &::before
+            content: ""
+            transition: 0.3s
+            background-color: #fff
+            position: absolute
+            width: 40px
+            height: 40px
+            top: -6px
+            left: -60px
+            border: 1px solid #CDCDCD
+            cursor: pointer
+        &:hover::before
+            border: 1px solid #BABABA
+        &::after
+            content: url(../icons/checkbox.svg)
+            fill: green
+            position: absolute
+            left: -48px
+            top: 0
+            display: none
+            cursor: pointer
+    &__input:checked ~ .addition__label::after 
+        display: block
+
+.button__form
+    padding: 14px 188px
+    border: none
+    cursor: pointer
+    &--label
+        margin-left: 81px
+        font-family: 'Arial', sans-serif
