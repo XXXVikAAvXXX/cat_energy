@@ -852,6 +852,7 @@ a {
   width: 82px;
 }
 .additional-items__btn {
+  cursor: pointer;
   width: 244px;
   padding: 7px 26px;
 }
