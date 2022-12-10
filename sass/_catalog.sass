@@ -84,6 +84,7 @@
             color: rgba(68, 68, 68, .3)
 
 .additional-items
+    margin-top: -68px
     &__title
         margin-bottom: 81px
         font-size: 36px
@@ -103,9 +104,13 @@
             width: 150%
             margin-right: -100%
             right: -40px
-    &__wrapper
+    &__list
         border-top: 1px solid #CDCDCD
         width: 896px
+    &__wrapper
+        display: flex
+        justify-content: space-between
+        align-items: center
     &__item
         padding: 15px 0 17px 0
         border-bottom: 1px solid #CDCDCD
@@ -124,4 +129,21 @@
     &__btn
         width: 244px
         padding: 7px 26px
+.gift
+    display: inline-block
+    &__wrapper
+        padding: 56px 43px 42px 41px
+        width: 245px
+        height: 289px
+        background-image: url(../img/gift-photo-desktop.png)
+    &__icon
+        display: block
+        margin: 0 auto
+        margin-bottom: 46px
+    &__descr
+        color: #fff
+        font-family: Arial, Helvetica, sans-serif
+        text-align: center
+        margin: 0 auto
+        line-height: 20px
 
