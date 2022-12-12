@@ -260,7 +260,7 @@ a {
 }
 .example__wrapper {
   background: #F2F2F2;
-  padding: 70px 0 75px 0;
+  padding: 70px 0 70px 0;
 }
 .example__text {
   width: 436px;
@@ -335,9 +335,9 @@ a {
 .progress__bar {
   display: flex;
   align-items: center;
-  position: absolute;
-  bottom: 72px;
-  right: 144px;
+  position: relative;
+  bottom: -146px;
+  right: -78px;
 }
 .progress__bar--before, .progress__bar--after {
   font-size: 20px;
@@ -367,38 +367,40 @@ a {
 }
 
 .maps {
+  max-width: 1440px;
+  margin: 0 auto;
   position: relative;
 }
-.maps__item {
-  width: 100%;
-  min-height: 400px;
+.maps__img {
+  display: block;
+  margin: 0 auto;
 }
 .maps__popup {
   padding: 0 89px 0 76px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  top: 10px;
-  left: 10px;
+  top: 93px;
+  left: 110px;
   position: absolute;
   width: 570px;
-  min-height: 201px;
+  min-height: 205px;
   background-color: #fff;
 }
 .maps__popup--title {
+  line-height: 25px;
   font-size: 20px;
   text-transform: uppercase;
-  width: 163px;
 }
 .maps__address {
   width: 155px;
 }
 .maps__address--street {
-  margin-bottom: 19px;
+  margin-bottom: 16px;
 }
 
 .footer {
-  margin: 47px 0;
+  margin: 57px 0;
 }
 .footer__wrapper {
   display: flex;
@@ -413,6 +415,7 @@ a {
 }
 
 .social {
+  margin-left: 25px;
   display: flex;
   align-items: center;
 }
