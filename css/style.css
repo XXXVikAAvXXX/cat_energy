@@ -45,7 +45,7 @@ a {
 }
 
 .header {
-  margin-top: 53px;
+  margin-top: 49px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -60,6 +60,7 @@ a {
   border-bottom: 2px solid #fff;
 }
 .main-nav__link {
+  padding: 5px 0;
   color: #fff;
   font-size: 20px;
   text-transform: uppercase;
@@ -85,6 +86,11 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.main__logo--img {
+  width: 202px;
+  height: 59px;
+}
+
 .promo {
   position: relative;
   margin-left: 80px;
@@ -92,16 +98,17 @@ a {
 }
 .promo__title {
   width: 414px;
-  line-height: 60px;
+  line-height: 56px;
   margin-bottom: 40px;
 }
 .promo__text {
   font-size: 20px;
   text-transform: uppercase;
-  margin-bottom: 52px;
+  margin-bottom: 46px;
 }
 .promo__btn {
-  padding: 14px 26px;
+  font-size: 20px;
+  padding: 12px 26px;
   transition: 0.3s all;
 }
 .promo__btn:hover {
@@ -114,8 +121,8 @@ a {
   content: url(../img/food-promo.png);
   position: absolute;
   z-index: 10;
-  top: -80px;
-  right: 230px;
+  top: -86px;
+  right: 220px;
 }
 
 .banner {
@@ -145,7 +152,7 @@ a {
 }
 
 .catalogs {
-  margin-top: 262px;
+  margin-top: 268px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -163,23 +170,24 @@ a {
   left: 52px;
 }
 .catalogs__title {
-  margin-top: 36px;
-  margin-bottom: 73px;
-  text-align: center;
+  margin: 25px 0 66px 161px;
+  text-transform: uppercase;
   font-size: 36px;
 }
 .catalogs__text {
   color: #000;
-  margin-bottom: 23px;
+  margin-bottom: 27px;
 }
 
 .slim__icon {
+  top: 40px;
   width: 100px;
   height: 106px;
 }
 
 .pro__icon {
-  left: 19px;
+  left: 33px;
+  top: 47px;
   width: 134px;
   height: 100px;
 }
@@ -213,7 +221,7 @@ a {
 }
 
 .how-work {
-  margin-top: 71px;
+  margin-top: 55px;
 }
 .how-work__title {
   margin-bottom: 32px;
@@ -225,15 +233,15 @@ a {
 }
 .how-work__item {
   position: relative;
-  width: 250px;
   height: 280px;
 }
 .how-work__text {
-  margin-top: 151px;
+  margin-top: 137px;
 }
 .how-work__icon {
   position: absolute;
-  top: 40px;
+  top: 25px;
+  left: 1px;
 }
 .how-work__number {
   position: absolute;
@@ -245,10 +253,10 @@ a {
 
 .example {
   position: relative;
-  margin-top: 69px;
+  margin-top: 40px;
 }
 .example__title {
-  margin-bottom: 76px;
+  margin-bottom: 62px;
 }
 .example__wrapper {
   background: #F2F2F2;
@@ -263,13 +271,13 @@ a {
   align-items: center;
 }
 .example__progress {
-  margin-top: 69px;
-  margin-bottom: 60px;
+  margin-top: 60px;
+  margin-bottom: 50px;
   display: flex;
   align-items: center;
 }
 .example__progress--item:not(:last-child) {
-  margin-right: 42px;
+  margin-right: 39px;
 }
 .example__progress--item {
   position: relative;
@@ -282,7 +290,7 @@ a {
   text-transform: none;
   font-size: 14px;
   position: absolute;
-  bottom: -11px;
+  bottom: -7px;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
@@ -290,14 +298,14 @@ a {
 }
 
 .weight {
-  padding: 15px 57px 20px 57px;
+  padding: 19px 57px 20px 57px;
 }
 .weight__text {
   width: 114px;
 }
 
 .time-spent {
-  padding: 15px 30px 20px 30px;
+  padding: 19px 30px 20px 30px;
 }
 .time-spent__text {
   width: 142px;
@@ -308,7 +316,7 @@ a {
   text-transform: uppercase;
 }
 .food-cost__value {
-  margin-left: 63px;
+  margin-left: 59px;
   font-size: 20px;
 }
 
@@ -316,19 +324,20 @@ a {
   margin-left: 134px;
 }
 .progress__img {
-  top: 0;
+  top: -40px;
   position: absolute;
 }
 .progress__img--after {
   display: none;
-  top: -20px;
-  right: 200px;
+  top: -42px;
+  right: 164px;
 }
 .progress__bar {
   display: flex;
   align-items: center;
   position: absolute;
-  bottom: 67px;
+  bottom: 72px;
+  right: 144px;
 }
 .progress__bar--before, .progress__bar--after {
   font-size: 20px;
@@ -389,7 +398,7 @@ a {
 }
 
 .footer {
-  margin: 57px 0;
+  margin: 47px 0;
 }
 .footer__wrapper {
   display: flex;
@@ -452,6 +461,7 @@ a {
   line-height: 1;
 }
 .form-block__descr {
+  text-transform: uppercase;
   width: 323px;
   margin-bottom: 66px;
   font-size: 20px;
@@ -464,11 +474,11 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 70px;
+  margin-bottom: 59px;
 }
 .form__label {
   white-space: nowrap;
-  margin-right: 13px;
+  margin-right: 19px;
   font-size: 20px;
   text-transform: uppercase;
   color: #444444;
@@ -479,7 +489,7 @@ a {
   width: 100%;
   text-transform: uppercase;
   border: 1px solid #E7E7E7;
-  padding: 10px 40px 11px 20px;
+  padding: 13px 40px 11px 20px;
 }
 .form__input:hover {
   border: 1px solid #CDCDCD;
@@ -488,7 +498,7 @@ a {
   border: 2px solid #FF8282;
 }
 .form__title {
-  margin-bottom: 76px;
+  margin-bottom: 70px;
   position: relative;
   font-size: 36px;
 }
@@ -523,11 +533,11 @@ a {
   align-items: center;
 }
 .info p:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 23px;
 }
 
 .contacts {
-  margin-bottom: 70px;
+  margin-bottom: 58px;
 }
 .contacts__wrapper {
   display: flex;
@@ -567,12 +577,12 @@ a {
 }
 
 .goal {
-  padding: 25px 28px 25px 50px;
+  padding: 27px 28px 25px 49px;
   border: 1px solid #E7E7E7;
-  width: 568px;
+  width: 569px;
 }
 .goal p:not(:last-child) {
-  margin-bottom: 30px;
+  margin-bottom: 24px;
 }
 .goal__label {
   font-size: 20px;
@@ -587,8 +597,8 @@ a {
   position: absolute;
   width: 40px;
   height: 40px;
-  top: -4px;
-  left: -60px;
+  top: -6px;
+  left: -61px;
   border: 1px solid #CDCDCD;
   border-radius: 50%;
   cursor: pointer;
@@ -605,8 +615,8 @@ a {
   position: absolute;
   width: 18px;
   height: 18px;
-  top: 8px;
-  left: -48px;
+  top: 6px;
+  left: -49px;
   border-radius: 50%;
   display: none;
   cursor: pointer;
@@ -622,27 +632,29 @@ a {
 }
 
 .comment {
-  margin-bottom: 67px;
+  margin-bottom: 51px;
 }
 .comment__input {
   text-transform: uppercase;
   width: 100%;
   min-height: 174px;
-  padding: 10px 18px;
+  font-size: 20px;
+  padding: 7px 18px;
   border: 1px solid #E7E7E7;
 }
 
 .addition {
-  margin-bottom: 61px;
+  margin-bottom: 64px;
 }
 .addition p {
   width: 221px;
 }
 .addition__wrapper {
+  margin-top: -16px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 25px;
+  padding-left: 24px;
 }
 .addition__input {
   opacity: 0;
@@ -686,7 +698,8 @@ a {
 }
 
 .button__form {
-  padding: 14px 188px;
+  font-size: 20px;
+  padding: 13px 208px;
   border: none;
   cursor: pointer;
 }
@@ -696,10 +709,10 @@ a {
 }
 
 .catalog {
-  margin-top: 74px;
+  margin-top: 56px;
 }
 .catalog__title {
-  margin-bottom: 165px;
+  margin-bottom: 150px;
 }
 .catalog__list {
   width: 100%;
@@ -708,19 +721,21 @@ a {
   justify-content: space-between;
 }
 .catalog__item {
-  padding: 0 36px 40px 36px;
+  padding: 0 36px 40px 40px;
   width: 245px;
   background: #F2F2F2;
   margin-bottom: 143px;
 }
 .catalog__item--wrapper {
-  margin-top: 41px;
-  margin-bottom: 33px;
+  margin-top: 162px;
+  margin-bottom: 30px;
 }
 .catalog__item--img-500 {
+  position: absolute;
   margin-top: -52px;
 }
 .catalog__item--img-1000 {
+  position: absolute;
   margin-top: -80px;
 }
 .catalog__item--title {
@@ -730,14 +745,14 @@ a {
   color: #222222;
   font-size: 20px;
   text-transform: uppercase;
-  margin-bottom: 22px;
+  margin-bottom: 20px;
   line-height: 21px;
 }
 .catalog__item--descr {
   width: 100%;
   display: flex;
   flex-wrap: nowrap;
-  padding: 5px 0 10px 0;
+  padding: 5px 0 7px 0;
   justify-content: space-between;
   border-bottom: 1px solid #CDCDCD;
 }
@@ -752,7 +767,7 @@ a {
   margin-top: 0;
   width: 60px;
   height: 60px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 .catalog__item--plus-part1 {
   margin-top: 30px;
@@ -770,7 +785,7 @@ a {
 }
 
 .show-more {
-  padding: 51px 35px 40px 35px;
+  padding: 49px 34px 40px 35px;
   background: #fff;
   border: 2px solid #F2F2F2;
 }
@@ -779,11 +794,11 @@ a {
   font-family: Arial, Helvetica, sans-serif;
   color: #444444;
   text-align: center;
-  margin-bottom: 87px;
+  margin-bottom: 77px;
 }
 .show-more__btn {
   background: #F2F2F2;
-  padding: 10px 38px;
+  padding: 10px 40px;
   color: #444444;
   text-transform: uppercase;
   border: none;
@@ -798,11 +813,11 @@ a {
 }
 
 .additional-items {
-  margin-top: -68px;
+  margin-top: -82px;
   margin-bottom: 86px;
 }
 .additional-items__title {
-  margin-bottom: 81px;
+  margin-bottom: 70px;
   font-size: 36px;
 }
 .additional-items__title::before, .additional-items__title::after {
@@ -839,7 +854,7 @@ a {
   align-items: center;
 }
 .additional-items__name {
-  width: 335px;
+  width: 325px;
   text-transform: uppercase;
   font-size: 20px;
 }
