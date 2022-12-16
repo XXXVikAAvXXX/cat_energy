@@ -1,0 +1,512 @@
+@media (max-width: 1400px)
+    .progress
+        margin-left: 80px
+            
+@media (max-width: 1300px)
+    .promo__wrapper
+        &::after
+            left: 380px
+    .progress
+        margin-left: 80px    
+@media (max-width: 1200px)
+    .progress
+        margin-left: 30px
+    .promo__wrapper
+        &::after
+            z-index: -1
+            top: 200px
+            left: 0px
+@media (max-width: 991px)
+    .container
+        max-width: 768px
+
+@media (max-width: 1200px)
+    .container
+        max-width: 768px
+    .banner::before,
+    .banner::after
+        display: none
+    .main-nav
+        &__link
+            color: #000
+            font-size: 18px
+        &__list
+            min-width: 440px
+        &__item
+            &--active
+                border-bottom: 2px solid #68B738
+    .main__logo--img
+        width: 174px
+        height: 69px
+    .promo
+        position: relative
+        margin-top: 62px
+        &::after
+            z-index: -1
+            left: 0
+            top: 210px
+            width: 100%
+            height: 609px
+    
+    .catalogs
+        flex-wrap: wrap
+        margin-top: 480px
+        &__block
+            width: 100%
+        &__title
+            margin: 0px 0 66px 0px
+        &__text
+            width: 377px
+        &__icon
+            width: 200px
+            height: 211px
+    .slim
+        margin-bottom: 30px
+    .how-work
+        &__wrapper
+            flex-wrap: wrap
+            justify-content: start
+        &__item
+            width: 250px
+            &:nth-child(1),
+            &:nth-child(3)
+                margin-right: 130px
+    .example
+        border-top: 1px solid #E6E6E6
+        &__title
+            margin-top: 43px
+        &__inner
+            flex-wrap: wrap
+        &__descr
+            width: 100%
+            margin-bottom: 100px
+        &__wrapper
+            padding: 0
+            background: #fff
+        &__text
+            width: 100%
+        &__progress
+            display: flex
+            justify-content: space-between
+            align-items: center
+            &--wrapper
+            &--label
+                background: #fff
+
+    .food-cost
+        text-align: right
+        &__value
+            margin-left: 0
+            display: block
+    .progress
+        background: #f2f2f2
+        width: 100%
+        margin-left: 0
+        min-height: 700px
+        &__img
+            width: 100%
+            top: -60px
+            left: 0
+            &--after
+                width: 600px
+                top: -40px
+                left: 110px
+        &__bar
+            width: 500px
+            justify-content: center
+            margin: 0 auto
+            top: 590px
+            right: 0
+    .maps__img
+        width: 100%
+    .maps__popup
+        top: 0
+        left: 0
+        justify-content: center
+        width: 100%
+        position: relative
+        &--title
+            margin-right: 120px
+    .pro__icon
+        width: 268px
+        left: 415px
+        top: 80px
+    .slim__icon
+        left: 470px
+        top: 80px
+    
+
+@media (max-width: 768px)
+    .container
+        max-width: 708px
+    .progress
+        &__img
+            &--before
+                top: 0
+
+@media (max-width: 708px)
+    .container
+        max-width: 650px
+    .pro__icon
+        width: 200px
+        left: 420px
+        top: 80px
+    .slim__icon
+        width: 150px
+        left: 450px
+        top: 80px
+    .progress
+        &__img
+            &--after
+                width: 560px
+                top: -40px
+                left: 100px
+
+@media (max-width: 670px)
+    .container
+        max-width: 576px
+    .promo
+        position: relative
+        width: 100%
+        background-image: url(../img/Promo__bg--mobile.png)
+        background-repeat: no-repeat
+        background-size: cover
+        margin: 0
+        min-height: 600px
+        &__title
+            text-align: center
+            color: #fff
+            margin: 0 auto
+            padding-top: 47px
+            font-size: 56px
+        &__text
+            margin-top: 35px
+            color: #fff
+            text-align: center
+        &__wrapper::after
+            display: none
+        &__btn
+            padding: 15px 30px
+            width: 450px
+            position: absolute
+            display: block
+            text-align: center
+            bottom: -550px
+            left: 50%
+            transform: translateX(-50%)
+        &__img--mobile
+            display: block
+            position: absolute
+            width: 80%
+            top: 270
+            left: 50%
+            transform: translateX(-50%)
+    .catalogs
+        margin-top: 270px
+        &__title
+            text-align: center
+            margin-bottom: 50px
+        &__text
+            width: 100%
+            padding-bottom: 23px
+            border-bottom: 1px solid #D9D9D9
+        &__block
+            padding: 30px 22px 18px 22px
+            height: 320px
+    .how-work
+        &__title
+            font-size: 56px
+        &__text
+            max-width: 320px
+            margin: 0
+            margin-left: 50px
+        &__item
+            display: flex
+            align-items: center
+            height: 100px
+            width: 100%
+            &:not(:last-child)
+                margin-bottom: 20px
+        br
+            display: none
+                
+        &__number
+            display: none
+        &__icon
+            position: relative
+            top: 0
+            left: 0
+    .example
+        &__title
+            margin: 20px 0
+        &__progress
+            display: block
+            &--wrapper
+                margin: 30px 0
+                justify-content: center
+    .food-cost
+        text-align: center
+        &__value
+            display: inline
+    .slim__icon
+        width: 70px
+        top: -45px
+        left: 60px
+    .pro__icon
+        width: 97px
+        top: -45px
+        left: 35px
+    .header
+        margin-top: 11px
+        background: #fff
+    .main__logo--img
+        width: 55px
+    .main-nav
+        &__list
+            text-align: center
+            position: fixed
+            top: 84px
+            left: -200%
+            width: 100vw
+            background-color: #fff
+            z-index: 10
+            display: block
+            margin: 0 auto
+            transition: 0.3s all
+            &--active
+                left: 50%
+                transform: translateX(-50%)
+        &__item
+            display: block
+            &--active
+                border-bottom: none
+        &__link
+            border-top: 1px solid #E6E6E6
+            display: block
+            font-size: 20px
+            padding: 22px 0
+    .hamburger
+        display: block
+    .additional-logo
+        margin-top: 5px
+        display: block
+        margin-right: 60px
+        width: 141px
+        &__img
+            width: 141px
+    .progress
+        min-height: 600px
+        &__bar
+            top: 500px
+        &__img
+            &--after
+                top: -80px
+                width: 100%
+                left: 0
+    .maps
+        &__popup
+            &--title
+                margin-right: 60px
+
+@media (max-width: 576px)
+    .container
+        max-width: 375px
+    .promo
+        min-height: 400px
+        &__title
+            font-size: 45px
+            padding-top: 27px
+            width: 320px
+        &__text
+            margin: 25px 0 30px 0
+        &__wrapper::before
+            width: 100%
+        &__btn
+            width: 100%
+            bottom: -400px
+    .catalogs
+        &__title
+            margin-left: 20px
+            margin-bottom: 20px
+            font-size: 36px
+        &__block
+            min-height: 300px
+        &__text
+            font-size: 14px
+    .how-work__item:nth-child(1),
+    .how-work__item:nth-child(3)
+        margin-right: 0
+    .pro__icon
+        width: 75px
+        height: 50px
+        top: 35px
+        left: 10px
+    .slim__icon
+        width: 50px
+        height: 50px
+        top: 35px
+        left: 30px
+    .how-work
+        &__title
+            font-size: 36px
+        &__text
+            margin-left: 20px
+    .example
+        background: #EAEAEA
+        &__wrapper
+            background: inherit
+        &__progress
+            &--label
+                background: #EAEAEA
+        &__title
+            font-size: 36px
+        &__text
+            font-size: 14px
+    .progress
+        min-height: 400px
+        background: inherit
+        &__line
+            width: 84px
+            background: none
+            &--circle
+                justify-content: start
+                padding: 3px 5px
+                top: -4px
+                width: 84px
+                height: 14px
+                border-radius: 6px
+                &-inside
+                    width: 35px
+                    height: 6px
+                    border-radius: 6px
+        &__bar
+            width: 300px
+            top: 320px
+            &--before,
+            &--after
+                border-bottom: none
+                padding: 4px 10px
+    .footer
+        margin: 25px 0
+        &__wrapper
+            flex-direction: column
+            min-height: 200px
+            align-items: center
+            justify-content: space-around
+            margin: 0 auto
+        &__logo
+            border-bottom: 1px solid #D9D9D9
+            width: 100%
+            padding-bottom: 32px
+            &--icon
+                display: block
+                margin: 0 auto
+    .social
+        justify-content: center
+        width: 100%
+        margin-left: 0
+        border-bottom: 1px solid #D9D9D9
+        padding-bottom: 20px
+    .maps
+        &__popup
+            justify-content: space-around
+            font-size: 16px
+            padding: 22px 20px
+            &--title
+                margin-right: 20px
+                font-size: 16px
+@media (max-width: 420px)
+    .container
+        max-width: 320px
+    .header
+        margin: 12px 0 12px 0
+    .main__logo--img
+        width: 33px
+        height: 37px
+    .additional-logo
+        margin-right: 0
+        &__img
+            width: 101px
+    .promo
+        min-height: 300px
+        &__title
+            font-size: 36px
+            line-height: 36px
+        &__text
+            font-size: 14px
+        &__btn
+            padding: 7px 0
+            font-size: 14px
+            bottom: -300px
+    .catalogs
+        margin-top: 170px
+        &__title
+            font-size: 24px
+    .slim__icon
+        top: 25px
+        left: 40px
+    .pro__icon
+        top: 25px
+    .how-work
+        margin-top: 27px
+        &__text
+            font-size: 14px
+    .example
+        min-height: 320px
+        &__progress
+            &--item
+                font-size: 24px
+            &--label
+                width: 70px
+                line-height: 12px
+                font-size: 12px
+                bottom: -15px
+            .weight
+                padding: 14px 42px 17px 42px
+            .time-spent
+                padding: 14px 20px 17px
+        
+    .progress
+        min-height: 350px
+        &__bar
+            top: 270px
+    .maps
+        &__popup
+            min-height: 115px
+            justify-content: space-between
+            &--title
+                margin-right: 0
+        &__address
+            line-height: 20px
+            &--street,
+            &--city
+                font-size: 14px
+                margin-bottom: 0
+@media (max-width: 375px)
+    .container
+        max-width: 280px
+    .example
+        &__progress
+            &--item:not(:last-child)
+                margin-right: 20px
+    .catalogs
+        &__title
+            margin-left: 30px
+    .slim__icon
+        top: 22px
+        left: 25px
+    .pro__icon
+        top: 25px
+        left: 3px
+    .progress
+            min-height: 310px
+            &__bar
+                width: 240px
+                top: 240px
+    .promo
+        &__title
+            max-width: 280px
+        &__btn
+            bottom: -270px
+    .catalogs
+        margin-top: 140px

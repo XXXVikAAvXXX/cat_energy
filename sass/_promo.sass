@@ -1,7 +1,14 @@
 .promo
-    position: relative
     margin-left: 80px
     margin-top: 111px
+    &__wrapper
+        position: relative
+        &::after
+            content: url(../img/food-promo.png)
+            position: absolute
+            z-index: 10
+            top: -86px
+            right: 320px
     &__title
         width: 414px
         line-height: 56px
@@ -18,12 +25,8 @@
             background-color: #5EAA2F
         &:active
             color: rgba(225, 225, 225, .3)
-    &::after
-        content: url(../img/food-promo.png)
-        position: absolute
-        z-index: 10
-        top: -86px
-        right: 220px
+    &__img--mobile
+        display: none
 .banner
     position: relative
     &::after

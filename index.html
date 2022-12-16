@@ -9,13 +9,19 @@
     <title>Cat energy</title>
 </head>
 <body>
-    <div class="container banner">
+    <div class="container banner banner__mobile">
         <header class="header">
             <div class="main-logo">
                 <a class="main__logo--link" href="#">
                     <picture>
-                        <img src="icons/logo-desktop.svg" alt="" class="main__logo--img">
+                        <source srcset="icons/logo-mobile.svg" media="(max-width: 670px)">
+                        <img src="icons/logo-desktop.svg" alt="Логотип Cat Energy" class="main__logo--img">
                     </picture>
+                </a>
+            </div>
+            <div class="additional-logo">
+                <a href="#" class="additional-logo__link">
+                    <img src="icons/logo_2-mobile.svg" alt="Логотип Cat Energy" class="additional-logo__img">
                 </a>
             </div>
             <nav class="main-nav">
@@ -30,17 +36,26 @@
                         <a href="#" class="main-nav__link">подбор программы</a>
                     </li>
                 </ul>
+                <button class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </nav>
         </header>
     </div>
     <main class="main">
+        <section class="promo">
+            <div class="container">
+                <div class="promo__wrapper">
+                    <h2 class="title promo__title">Функциональное питание для котов</h2>
+                    <p class="promo__text">Занялся собой? Займись котом!</p>
+                    <img src="img/food-promo.png" alt="" class="promo__img--mobile">
+                    <a class="button promo__btn" href="#">подобрать программу</a>
+                </div>
+            </div>
+        </section>
         <div class="container">
-            <section class="promo">
-                <h2 class="title promo__title">Функциональное питание для котов</h2>
-                <p class="promo__text">Занялся собой? Займись котом!</p>
-                <a class="button promo__btn" href="#">подобрать программу</a>
-            </section>
-    
             <section class="catalogs">
                 <div class="catalogs__block slim">
                     <img src="icons/slim_cat_icon-1.svg" width="100" height="106" alt="Каталог slim иконка кота" class="catalogs__icon slim__icon">
@@ -129,26 +144,31 @@
                                 привычек и по-прежнему спит по 16 часов в день. 
                             </p>
                             <div class="example__progress">
-                                <div class="example__progress--item weight">
-                                    5 кг
-                                    <p class="example__progress--label weight__text text">снижение веса</p>
+                                <div class="example__progress--wrapper">
+                                    <div class="example__progress--item weight">
+                                        5 кг
+                                        <p class="example__progress--label weight__text text">снижение веса</p>
+                                    </div>
+                                    <div class="example__progress--item time-spent">
+                                        60 дней
+                                        <p class="example__progress--label time-spent__text text">затрачено времени</p>
+                                    </div>
                                 </div>
-                                <div class="example__progress--item time-spent">
-                                    60 дней
-                                    <p class="example__progress--label time-spent__text text">затрачено времени</p>
-                                </div>
+                                <p class="food-cost">Затраты на питание: <span class="food-cost__value">15 000 РУБ.</span></p>
                             </div>
-                            <p class="food-cost">Затраты на питание: <span class="food-cost__value">15 000 РУБ.</span></p>
                         </div>
                         <div class="progress">
                             <img src="img/cat_skinny.png" alt="Стройный кот после" class="progress__img progress__img--after">
                             <img src="img/fat_cat.png" alt="Толстый кот до" class="progress__img progress__img--before">
                             <div class="progress__bar">
-                                <p class="progress__bar--before">Было</p>
+                                <button type="button" class="progress__bar--before">Было</button>
                                 <div class="progress__line">
-                                    <div class="progress__line--circle"></div>
+                                    <div class="progress__line--circle">
+                                        <div class="progress__line--circle-inside">
+                                        </div>
+                                    </div>
                                 </div>
-                                <p class="progress__bar--after">Стало</p>
+                                <button type="button" class="progress__bar--after">Стало</button>
                             </div>
                         </div>
                     </div>
@@ -168,7 +188,11 @@
                     <p class="maps__address--city text">Санкт-Петербург</p>
                 </div>
             </div>
-            <img class="maps__img" src="img/Map.jpg" alt="Карта">
+            <picture>
+                <source srcset="img/Map-mobile.jpg" media="(max-width: 375px)">
+                <source srcset="img/Map-tablet.jpg" media="(max-width: 768px)">
+                <img class="maps__img" src="img/Map.jpg" alt="Карта">
+            </picture>
         </section>
     </main>
     <footer class="footer">
