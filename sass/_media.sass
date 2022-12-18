@@ -92,7 +92,6 @@
             &--wrapper
             &--label
                 background: #fff
-
     .food-cost
         text-align: right
         &__value
@@ -134,8 +133,78 @@
     .slim__icon
         left: 470px
         top: 80px
-    
-
+    .info
+        width: 350px
+    .goal
+        width: 350px
+    .form__title::after
+        width: 100%
+    .contacts
+        &__email,
+        &__phone 
+            width: 370px
+    .addition
+        margin: 0
+        &__wrapper
+            flex-wrap: wrap
+            p
+                margin-bottom: 40px
+    .button__form
+        padding: 13px 150px
+    .catalog-body
+        .container
+            max-width: 708px
+        .maps__popup--gray
+            background: #F2F2F2
+    .catalog
+        &__item
+            position: relative
+            width: 324px
+            &--img-500,
+            &--img-1000
+                left: 50%
+                transform: translateX(-50%)
+    .additional-items
+        &__wrapper
+            flex-wrap: wrap
+        &__list
+            width: 100%
+        &__item
+            border-left: 1px solid #CDCDCD
+            border-right: 1px solid #CDCDCD
+            flex-wrap: wrap
+            padding: 26px 38px 28px 38px
+        &__btn
+            margin-top: 26px
+        &__cost
+            width: 60px
+        &__name
+            width: 285px
+    .order__btn
+        margin: 0 auto
+        display: block
+        width: 100%
+    .show-more__btn
+        display: block
+        margin: 0 auto
+    .gift
+        &__wrapper
+            margin-top: 70px
+            background-image: url(../img/gift-photo-tablet.png)
+            width: 708px
+            height: 200px
+            display: flex
+            align-items: center
+            justify-content: space-between
+            padding: 0 124px 0 78px
+        &__icon
+            margin: 0
+            width: 80px
+            height: 83px
+        &__descr
+            margin: 0
+            width: 160px
+            text-align: left
 @media (max-width: 768px)
     .container
         max-width: 708px
@@ -143,6 +212,36 @@
         &__img
             &--before
                 top: 0
+    .form-block__title
+        margin: 65px 0 54px
+    .form__wrapper
+        flex-wrap: wrap
+    .info,
+    .goal
+        width: 100%
+    .info
+        margin-bottom: 72px
+    .contacts
+        &__wrapper
+            flex-wrap: wrap
+        &__email,
+        &__phone
+            width: 100%
+        &__email
+            margin-bottom: 20px
+    .form-body
+        .container
+            max-width: 630px
+        .form-nav__list
+            min-width: 420px
+    .button__form
+        padding: 10px 90px
+    .addition__wrapper
+        margin-bottom: 30px
+    .form
+        margin-bottom: 72px
+    .maps__popup--gray
+        background: #F2F2F2
 
 @media (max-width: 708px)
     .container
@@ -307,6 +406,126 @@
         &__popup
             &--title
                 margin-right: 60px
+    .form-body
+        .container
+            max-width: 500px
+    .form-block__title
+        margin: 50px 0 45px 0
+        font-size: 53px
+    .info
+        margin-bottom: 40px
+    .form__title
+        font-size: 33px
+        margin-bottom: 50px
+    .addition__wrapper
+        width: 100%
+    .button__form
+        font-size: 18px
+        padding: 10px 60px
+        &--label
+            margin-left: 50px
+    .contacts
+        &__title
+            width: 300px
+    .comment
+        &__title
+            width: 215px
+    .form-nav__item--active
+        border-bottom: 1px solid #E6E6E6 
+    .catalog-body
+        .container
+            max-width: 280px
+    .catalog
+        margin-top: 27px
+        &__title
+            font-size: 36px
+            margin-bottom: 50px
+        &__item
+            border-top: 1px solid #EBEBEB
+            padding: 14px 0
+            background-color: #fff
+            margin-bottom: 11px
+            &--img-500,
+            &--img-1000
+            &--img-500
+                width: 100px
+                height: 110px
+                top: 70px
+                left: 65px
+            &--img-1000
+                width: 100px
+                height: 130px
+                top: 89px
+                left: 65px
+            &--wrapper
+                margin-top: 0
+            &--descr
+                width: 145px
+                margin: 0 0 0 auto
+            &--title
+                margin: 0 0 18px auto
+                font-size: 16px
+                text-align: right
+            &--weight,
+            &--taste,
+            &--cost,
+            &--value
+                font-size: 12px
+            &--plus-part1,
+            &--plus-part2
+                margin: 0 auto
+                width: 30px
+            &--plus
+                height: 0
+                margin-top: 10px
+                margin-bottom: 30px
+            &--title
+                font-size: 16px
+                width: 100%
+    .show-more
+        border: none
+        border-top: 1px solid #EBEBEB
+        border-bottom: 1px solid #EBEBEB
+        width: 320px
+        padding: 25px 0
+        &__descr
+            width: 100%
+            font-size: 12px
+            margin: 0 auto
+            margin-bottom: 21px
+        &__title
+            text-align: center
+            margin-bottom: 8px
+    .additional-items
+        margin-top: 0
+        margin-bottom: 35px
+        &::after
+            top: 19px
+        &__title
+            font-size: 24px
+            width: 275px
+            margin-bottom: 36px
+        &__descr,
+        &__cost
+            margin-top: 13px
+            font-size: 14px
+        &__descr
+            width: 150px
+        &__cost
+            width: 50px
+        &__name
+            font-size: 16px
+    .gift
+        &__wrapper
+            padding: 58px 60px 43px 59px
+            background-image: url(../img/gift-photo-mobile.png)
+            width: 280px
+            height: 289px
+            margin-top: 40px
+            display: flex
+            flex-direction: colum
+        &__descr
+            text-align: center
 
 @media (max-width: 576px)
     .container
@@ -415,11 +634,58 @@
             &--title
                 margin-right: 20px
                 font-size: 16px
+    .form-body
+        .container
+            width: 420px
+    .form-block
+        &__title
+            margin: 27px 0 37px 0
+            font-size: 42px
+        &__descr
+            font-size: 16px
+            margin-bottom: 40px
+    .form__title
+        font-size: 24px
+        &::before
+            left: -23px
+        &::after
+            right: -23px
+    .button__form--label
+        margin-top: 21px
+        margin-left: 0
+    .form__btn
+        justify-content: center
+        flex-wrap: wrap
+    .button__form
+        width: 100%
+    .addition__wrapper
+        margin-bottom: 15px
+        p
+            margin-bottom: 25px
+    .form
+        margin-bottom: 32px
+    .contacts
+        &::after
+            top: 19px
+        &__title
+            width: 230px
+    .comment
+        &::after
+            top: 19px
+        &__title
+            width: 170px
+    .addition
+        &::after
+            top: 19px
+        &__title
+            width: 190px
 @media (max-width: 420px)
     .container
         max-width: 320px
     .header
         margin: 12px 0 12px 0
+    .main-nav__list
+        top: 65px
     .main__logo--img
         width: 33px
         height: 37px
@@ -482,6 +748,23 @@
             &--city
                 font-size: 14px
                 margin-bottom: 0
+    .form-body
+        .container
+            max-width: 320px
+    .form-block__descr
+        width: 226px
+        font-size: 14px
+    .form-block__title
+        font-size: 36px
+    .form__label,
+    .goal__label,
+    .form__input,
+    .comment__input,
+    .addition__label,
+    .button__form
+        font-size: 16px
+    .goal
+        padding: 20px 15px 20px 40px
 @media (max-width: 375px)
     .container
         max-width: 280px
@@ -510,3 +793,8 @@
             bottom: -270px
     .catalogs
         margin-top: 140px
+    .maps__popup
+        padding: 22px 0px 22px 20px
+    .form-body
+        .container
+            max-width: 280px

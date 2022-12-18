@@ -8,18 +8,24 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Подбор программы</title>
 </head>
-<body>
+<body class="form-body">
     <div class="container">
         <header class="header">
             <div class="main-logo">
                 <a class="main__logo--link" href="#">
                     <picture>
-                        <img src="icons/logo-desktop.svg" alt="" class="main__logo--img">
+                        <source srcset="icons/logo-mobile.svg" media="(max-width: 670px)">
+                        <img src="icons/logo-desktop.svg" alt="Логотип Cat Energy" class="main__logo--img">
                     </picture>
                 </a>
             </div>
+            <div class="additional-logo">
+                <a href="#" class="additional-logo__link">
+                    <img src="icons/logo_2-mobile.svg" alt="Логотип Cat Energy" class="additional-logo__img">
+                </a>
+            </div>
             <nav class="main-nav form-nav">
-                <ul class="main-nav__list">
+                <ul class="main-nav__list form-nav__list">
                     <li class="main-nav__item">
                         <a href="#" class="main-nav__link form-nav__link">главная</a>
                     </li>
@@ -30,6 +36,11 @@
                         <a href="#" class="main-nav__link form-nav__link form-nav__item--active">подбор программы</a>
                     </li>
                 </ul>
+                <button class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </nav>
         </header>
     </div>
@@ -41,7 +52,9 @@
                     Заполните анкету, и мы подберем
                     программу питания для вашего кота
                 </p>
-                <form class="form">
+            </div>
+            <form action="https://echo.htmlacademy.ru" method="post" class="form">
+                <div class="container">
                     <div class="form__wrapper">
                         <div class="info">
                             <p>
@@ -72,7 +85,9 @@
                             </p>
                         </div>
                     </div>
-                    <div class="contacts">
+                </div>
+                <div class="contacts">
+                    <div class="container">
                         <h3 class="contacts__title form__title">Контактные данные (владельца кота)</h3>
                         <div class="contacts__wrapper">
                             <div class="contacts__email">
@@ -85,11 +100,15 @@
                             </div>
                         </div>
                     </div>
-                    <div class="comment">
+                </div>
+                <div class="comment">
+                    <div class="container">
                         <h3 class="comment__title form__title">Комментарий</h3>
                         <textarea class="comment__input" name="text" id="" cols="30" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
                     </div>
-                    <div class="addition">
+                </div>
+                <div class="addition">
+                    <div class="container">
                         <h3 class="addition__title form__title">Дополнительно</h3>
                         <div class="addition__wrapper">
                             <p>
@@ -110,15 +129,17 @@
                             </p>
                         </div>
                     </div>
+                </div>
+                <div class="container">
                     <div class="form__btn">
                         <button type="submit" class="button button__form">отправить заявку</button>
                         <p class="button__form--label">* — Обязательные поля</p>
                     </div>
-                </form>
-            </div>
+                </div>
+            </form>
         </section>
         <section class="maps">
-            <div class="maps__popup">
+            <div class="maps__popup maps__popup--gray">
                 <h2 class="maps__popup--title">
                     приглашаем<br>
                     к сотрудничеству<br>
@@ -129,7 +150,11 @@
                     <p class="maps__address--city text">Санкт-Петербург</p>
                 </div>
             </div>
-            <img class="maps__img" src="img/Map.jpg" alt="Карта">
+            <picture>
+                <source srcset="img/Map-mobile.jpg" media="(max-width: 375px)">
+                <source srcset="img/Map-tablet.jpg" media="(max-width: 768px)">
+                <img class="maps__img" src="img/Map.jpg" alt="Карта">
+            </picture>
         </section>
     </main>
     <footer class="footer">
